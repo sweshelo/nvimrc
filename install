@@ -1,3 +1,8 @@
 #!/bin/bash
-$files = `dirname $0`
-cp -r $files $HOME/.config/
+files=`dirname $0`
+if [ -d '$HOME/.config'  ];then
+    mkdir $HOME/.config
+fi
+
+cp $files/*.vim $HOME/.config/nvim/
+cp -r $files/plug/ $HOME/.config/nvim/
