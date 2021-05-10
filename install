@@ -1,0 +1,3 @@
+#!/bin/bash
+$files = `dirname $0`
+cp -r $files $HOME/.config/
