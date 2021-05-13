@@ -33,3 +33,9 @@ repo = 'Shougo/deoplete.nvim'
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'Quramy/tsuquyomi'
+
+[[plugins]]
+repo = 'vim-syntastic/syntastic'
