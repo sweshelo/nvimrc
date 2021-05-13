@@ -25,3 +25,8 @@ nmap <Space>t  :tabnew<CR>
 
 " ターミナル
 nmap tt :bo term<CR><c-w>w20<c-w>+<c-w>j
+
+" WindowsでBackSpace出来ない
+if has('win32') || has('win64')
+    imap <Char-0x08> <BS>
+endif

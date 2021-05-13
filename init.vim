@@ -1,24 +1,27 @@
+" OS毎に設定を変える
+if has('win32') || has('win64')
+    let s:dein_dir  = expand('~/AppData/Local/nvim')
+    let s:dein_toml = expand('~/AppData/Local/nvim/plug/normal.toml')
+    let g:python3_host_prog='C:\Python39\python.exe'
+else
+    let s:dein_dir  = expand('~/.config/nvim')
+    let s:dein_toml = expand('~/.config/nvim/plug/normal.toml')
+endif
+
+" runtimepath set
+execute 'set runtimepath+='.s:dein_dir.'/repos/github.com/Shougo/dein.vim'
+
 " 基本設定
-source ~/.config/nvim/normal.vim
+execute 'source '.s:dein_dir.'/normal.vim'
 
 " キーマップ設定
-source ~/.config/nvim/keymap.vim
+execute 'source '.s:dein_dir.'/keymap.vim'
 
 " dein.vim 設定 {{{
 if &compatible
     set nocompatible
 endif
 
-" OS毎に設定を変える
-if has('win32') || has('win64')
-    let s:dein_dir  = expand('~/AppData/Local/nvim')
-    let s:dein_toml = expand('~/AppData/Local/nvim/plug/normal.toml')
-else
-    let s:dein_dir  = expand('~/.config/nvim')
-    let s:dein_toml = expand('~/.config/nvim/plug/normal.toml')
-endif
-
-set runtimepath+=~/.cache\dein\repos\github.com\Shougo\dein.vim
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 if &runtimepath !~# '/dein.vim'
@@ -47,7 +50,7 @@ endif
 "}}}
 
 " プラグイン 設定
-source ~/.config/nvim/plugin.vim
+execute 'source '.s:dein_dir.'/plugin.vim'
 
 if has('vim_starting')
     let &t_SI .= "\e[6 q"
@@ -58,4 +61,4 @@ endif
 filetype plugin indent on
 syntax enable
 
-colorscheme molokai 
+colorscheme molokai
