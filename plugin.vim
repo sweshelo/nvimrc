@@ -11,7 +11,26 @@ let g:lightline = {
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
-autocmd
+" tsuquyomi
+let g:tsuquyomi_completion_detail = 1
+let g:tsuquyomi_completion_detail = 1
+autocmd FileType typescript setlocal completeopt+=menu,preview
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_mode_map = {
+    \ 'mode': 'passive',
+    \ 'active_filetypes': ['php', 'javascript', 'python', 'sh']
+    \}
+
 
 " nerdtree 設定
 " 引数なしでvimを開いたらNERDTreeを起動
