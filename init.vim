@@ -8,9 +8,6 @@ else
     let s:dein_toml = expand('~/.config/nvim/plug/normal.toml')
 endif
 
-" runtimepath set
-execute 'set runtimepath+='.s:dein_dir.'/repos/github.com/Shougo/dein.vim'
-
 " 基本設定
 execute 'source '.s:dein_dir.'/normal.vim'
 
