@@ -9,7 +9,7 @@ let g:lightline = {
     \ }
 
 " deoplete
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 
 " tsuquyomi
 let g:tsuquyomi_completion_detail = 1
@@ -33,6 +33,8 @@ let g:syntastic_mode_map = {
     \ 'active_filetypes': ['php', 'javascript', 'python', 'sh']
     \}
 
+" coc
+autocmd FileType scss setl iskeyword+=@-@
 
 " nerdtree 設定
 " 引数なしでvimを開いたらNERDTreeを起動

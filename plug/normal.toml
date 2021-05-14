@@ -29,9 +29,6 @@ repo = 'Nequo/vim-allomancer'
 repo = 'tomasr/molokai'
 
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-
-[[plugins]]
 repo = 'cohama/lexima.vim'
 
 [[plugins]]
@@ -39,3 +36,15 @@ repo = 'Quramy/tsuquyomi'
 
 [[plugins]]
 repo = 'vim-syntastic/syntastic'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+
+[[plugins]]
+repo = 'neoclide/coc-html'
+
+[[plugins]]
+repo = 'neoclide/coc-css'
+
+[[plugins]]
+repo = 'neoclide/coc-tsserver'
