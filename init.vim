@@ -49,11 +49,7 @@ endif
 " プラグイン 設定
 execute 'source '.s:dein_dir.'/plugin.vim'
 
-if has('vim_starting')
-    let &t_SI .= "\e[6 q"
-    let &t_EI .= "\e[6 q"
-    let &t_SR .= "\e[6 q"
-endif
+set guicursor+=n:ver10,v:ver10,c:ver10
 
 filetype plugin indent on
 syntax enable
