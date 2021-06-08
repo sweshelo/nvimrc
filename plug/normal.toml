@@ -48,3 +48,7 @@ repo = 'neoclide/coc-css'
 
 [[plugins]]
 repo = 'neoclide/coc-tsserver'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
