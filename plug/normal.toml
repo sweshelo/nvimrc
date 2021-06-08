@@ -50,5 +50,13 @@ repo = 'neoclide/coc-css'
 repo = 'neoclide/coc-tsserver'
 
 [[plugins]]
+repo = 'Shougo/deol.nvim'
+
+[[plugins]]
 repo = 'pangloss/vim-javascript'
 
+[[plugins]]
+repo = 'jelera/vim-javascript-syntax'
+
+[[plugins]]
+repo = 'othree/yajs.vim'
