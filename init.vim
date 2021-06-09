@@ -51,7 +51,7 @@ endif
 " プラグイン 設定
 execute 'source '.s:dein_dir.'/plugin.vim'
 
-set guicursor+=n:ver10,v:ver10,c:ver10
+set guicursor+=n:ver10,v:ver10,c:ver10,t:ver10
 
 filetype plugin indent on
 syntax enable
