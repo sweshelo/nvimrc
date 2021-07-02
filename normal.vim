@@ -46,14 +46,6 @@ function! SassCompile()
 endfunction
 autocmd! BufWritePost *.scss :call SassCompile()
 
-" ss保存時にコンパイル
-function! TsCompile()
-    if expand("%:r")[0] != '_'
-        :!tsc %:
-    endif
-endfunction
-autocmd! BufWritePost *.ts :call TsCompile()
-
 "補完 有効化
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
