@@ -22,7 +22,7 @@ nmap <Space>ls :NERDTreeToggle<CR>
 nmap <Space>t  :tabnew<CR>
 
 " ターミナル
-nmap tt :bo term<CR><c-w>w20<c-w>+<c-w>j
+nmap tt :split<CR><c-w>j<c-w>J<c-w>w10<c-w>+<c-w>j:term<CR>
 
 " WindowsでBackSpace出来ない
 if has('win32') || has('win64')
