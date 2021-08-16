@@ -11,8 +11,6 @@ imap <c-e> <Esc>$a
 nmap ; :
 nmap j gj
 nmap k gk
-nmap - <c-x>
-nmap + <c-a>
 nmap <esc><esc> :nohlsearch<cr><cr>
 
 " NERDTree 開く
