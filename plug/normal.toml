@@ -1,42 +1,45 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# git
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
+# ファイラ
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 
+# devicon有効に
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
+# ステータスライン装飾
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 
-[[plugins]]
-repo = 'AtsushiM/sass-compile.vim'
-
-[[plugins]]
-repo = 'AtsushiM/search-parent.vim'
-
+# カラースキーム
 [[plugins]]
 repo = 'Nequo/vim-allomancer'
 
 [[plugins]]
 repo = 'tomasr/molokai'
 
+# カッコ(とか)を閉じる
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
+# typescript
 [[plugins]]
 repo = 'Quramy/tsuquyomi'
 
+# シンタックスチェッカ
 [[plugins]]
 repo = 'vim-syntastic/syntastic'
 
+# LSP?
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 
@@ -49,18 +52,22 @@ repo = 'neoclide/coc-css'
 [[plugins]]
 repo = 'neoclide/coc-tsserver'
 
+# shell
 [[plugins]]
 repo = 'Shougo/deol.nvim'
 
+# js
 [[plugins]]
 repo = 'pangloss/vim-javascript'
 
 [[plugins]]
 repo = 'jelera/vim-javascript-syntax'
 
+# Yet Another JavaScript Syntax
 [[plugins]]
 repo = 'othree/yajs.vim'
 
+# vimでマークダウンをプレビューするためのプラグイン
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 
@@ -76,5 +83,6 @@ hook_add = '''
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
+# jsxのインデント
 [[plugins]]
 repo = 'MaxMEllon/vim-jsx-pretty'
