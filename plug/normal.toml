@@ -13,8 +13,8 @@ repo = 'airblade/vim-gitgutter'
 repo = 'scrooloose/nerdtree'
 
 # devicon有効に
-[[plugins]]
-repo = 'ryanoasis/vim-devicons'
+#[[plugins]]
+#repo = 'ryanoasis/vim-devicons'
 
 # ステータスライン装飾
 [[plugins]]
@@ -32,25 +32,25 @@ repo = 'tomasr/molokai'
 repo = 'cohama/lexima.vim'
 
 # typescript
-[[plugins]]
-repo = 'Quramy/tsuquyomi'
+#[[plugins]]
+#repo = 'Quramy/tsuquyomi'
 
 # シンタックスチェッカ
 [[plugins]]
 repo = 'vim-syntastic/syntastic'
 
 # LSP?
-[[plugins]]
-repo = 'neoclide/coc.nvim'
+#[[plugins]]
+#repo = 'neoclide/coc.nvim'
 
-[[plugins]]
-repo = 'neoclide/coc-html'
+#[[plugins]]
+#repo = 'neoclide/coc-html'
 
-[[plugins]]
-repo = 'neoclide/coc-css'
+#[[plugins]]
+#repo = 'neoclide/coc-css'
 
-[[plugins]]
-repo = 'neoclide/coc-tsserver'
+#[[plugins]]
+#repo = 'neoclide/coc-tsserver'
 
 # shell
 [[plugins]]
