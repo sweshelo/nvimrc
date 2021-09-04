@@ -40,17 +40,20 @@ repo = 'cohama/lexima.vim'
 repo = 'vim-syntastic/syntastic'
 
 # LSP?
-#[[plugins]]
-#repo = 'neoclide/coc.nvim'
+[[plugins]]
+repo = 'neoclide/coc.nvim'
 
-#[[plugins]]
-#repo = 'neoclide/coc-html'
+[[plugins]]
+repo = 'neoclide/coc-html'
 
-#[[plugins]]
-#repo = 'neoclide/coc-css'
+[[plugins]]
+repo = 'neoclide/coc-css'
 
-#[[plugins]]
-#repo = 'neoclide/coc-tsserver'
+[[plugins]]
+repo = 'neoclide/coc-tsserver'
+
+[[plugins]]
+repo = 'pappasam/coc-jedi'
 
 # shell
 [[plugins]]
