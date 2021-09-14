@@ -52,6 +52,7 @@ endif
 execute 'source '.s:dein_dir.'/plugin.vim'
 
 set guicursor+=n:ver10,v:ver10,c:ver10
+set guifont=RictyDiminished\ NF:h12
 
 filetype plugin indent on
 syntax enable
@@ -62,3 +63,4 @@ highlight NonText ctermbg=none
 highlight LineNr ctermbg=none
 highlight Folded ctermbg=none
 highlight EndOfBuffer ctermbg=none 
+highlight EndOfBuffer ctermfg=black ctermbg=black guifg=black guibg=black
