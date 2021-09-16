@@ -5,9 +5,11 @@ if has('win32') || has('win64')
     let g:python3_host_prog='C:\Python39\python.exe'
     set shell=powershell.exe
     set shellcmdflag=-NoProfile\ -NoLogo\ -NonInteractive\ -Command
+    set guifont=RictyDiminished\ NF:h12
 else
     let s:dein_dir  = expand('~/.config/nvim')
     let s:dein_toml = expand('~/.config/nvim/plug/normal.toml')
+    set guifont=RictyDiminished\ NF\ 12
 endif
 
 " 基本設定
@@ -52,7 +54,6 @@ endif
 execute 'source '.s:dein_dir.'/plugin.vim'
 
 set guicursor+=n:ver10,v:ver10,c:ver10
-set guifont=RictyDiminished\ NF:h12
 
 filetype plugin indent on
 syntax enable
