@@ -32,8 +32,8 @@ repo = 'tomasr/molokai'
 repo = 'cohama/lexima.vim'
 
 # typescript
-#[[plugins]]
-#repo = 'Quramy/tsuquyomi'
+[[plugins]]
+repo = 'Quramy/tsuquyomi'
 
 # シンタックスチェッカ
 [[plugins]]
