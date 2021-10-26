@@ -38,6 +38,8 @@ set whichwrap=b,s,h,l,<,>,[,],~
 set cursorline
 set foldmethod=marker
 
+set fillchars+=vert:\ 
+
 " scss保存時にコンパイル
 function! SassCompile()
     if expand("%:r")[0] != '_'
