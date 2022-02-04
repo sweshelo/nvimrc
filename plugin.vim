@@ -311,4 +311,10 @@ let g:javascript_plugin_jsdoc = 1
 " let g:javascript_conceal_noarg_arrow_function = "🞅"
 " let g:javascript_conceal_underscore_arrow_function = "🞅"
 set conceallevel=1
+
 map <leader>l :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<CR>
+
+" vim jsx pretty
+let g:vim_jsx_pretty_template_tags = ['html', 'jsx', 'js']
+let g:vim_jsx_pretty_highlight_close_tag = 1
+let g:vim_jsx_pretty_colorful_config = 1
