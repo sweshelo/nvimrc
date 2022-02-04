@@ -65,3 +65,5 @@ highlight LineNr ctermbg=none
 highlight Folded ctermbg=none
 highlight EndOfBuffer ctermbg=none
 highlight EndOfBuffer ctermfg=black ctermbg=black guifg=black guibg=black
+highlight CocFloating ctermbg=darkgray
+highlight CocErrorFloat ctermbg=darkgray
