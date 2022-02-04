@@ -10,11 +10,14 @@ repo = 'airblade/vim-gitgutter'
 
 # ファイラ
 [[plugins]]
-repo = 'scrooloose/nerdtree'
+repo = 'Shougo/defx.nvim'
 
 # devicon有効に
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
 
 # ステータスライン装飾
 [[plugins]]
@@ -86,3 +89,15 @@ repo = 'tyru/open-browser.vim'
 # jsxのインデント
 [[plugins]]
 repo = 'MaxMEllon/vim-jsx-pretty'
+
+# tsx
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+# ESLint
+[[plugins]]
+repo = 'dense-analysis/ale'
+
+# PowerShell
+[[plugins]]
+repo = 'coc-extensions/coc-powershell'

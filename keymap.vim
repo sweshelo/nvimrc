@@ -13,8 +13,8 @@ nmap j gj
 nmap k gk
 nmap <esc><esc> :nohlsearch<cr><cr>
 
-" NERDTree 開く
-nmap <Space>ls :NERDTreeToggle<CR>
+" defx.nvim 開く
+nmap <Space>ls :Defx -columns=icons:indent:filename:type<CR>
 
 " 新しいタブ
 nmap <Space>t  :tabnew<CR>
