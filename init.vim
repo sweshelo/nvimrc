@@ -2,7 +2,7 @@
 if has('win32') || has('win64')
     let s:dein_dir  = expand('~/AppData/Local/nvim')
     let s:dein_toml = expand('~/AppData/Local/nvim/plug/normal.toml')
-    let g:python3_host_prog='C:\Python39\python.exe'
+    let g:python3_host_prog='C:\Users\sweshelo\scoop\shims\python3.exe'
     set shell=powershell.exe
     set shellcmdflag=-NoProfile\ -NoLogo\ -NonInteractive\ -Command
     set guifont=RictyDiminished\ NF:h12
