@@ -19,6 +19,9 @@ repo = 'ryanoasis/vim-devicons'
 [[plugins]]
 repo = 'kristijanhusak/defx-icons'
 
+[[plugins]]
+repo = 'kristijanhusak/defx-git'
+
 # ステータスライン装飾
 [[plugins]]
 repo = 'itchyny/lightline.vim'
