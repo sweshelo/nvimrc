@@ -45,7 +45,6 @@ repo = 'Quramy/tsuquyomi'
 [[plugins]]
 repo = 'vim-syntastic/syntastic'
 
-# LSP?
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 
