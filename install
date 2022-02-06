@@ -1,9 +1,2 @@
 #!/bin/bash
-files=`dirname $0`
-echo $files
-if [ ! -d '$HOME/.config/nvim'  ];then
-    mkdir -p $HOME/.config/nvim
-fi
-
-cp $files/*.vim $HOME/.config/nvim/
-cp -r $files/plug/ $HOME/.config/nvim/
+ln -s `pwd` $HOME/.config/nvim
