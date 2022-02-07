@@ -17,7 +17,7 @@ nmap <esc><esc> :nohlsearch<cr><cr>
 nmap <Space>ls :Defx<CR>
 
 " 新しいタブ
-nmap <Space>t  :tabnew<CR>
+nmap <Space>t  :tabnew<CR>:Defx<CR>
 
 " ターミナル
 nmap tt :split<CR><c-w>j<c-w>J<c-w>w10<c-w>+<c-w>j:term<CR>

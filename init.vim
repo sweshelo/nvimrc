@@ -52,6 +52,7 @@ endif
 
 " プラグイン 設定
 execute 'source '.s:dein_dir.'/plugin.vim'
+autocmd BufRead,BufNewFile *.ts set filetype=typescript
 
 set guicursor+=n:ver10,v:ver10,c:ver10
 
