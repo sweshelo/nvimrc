@@ -103,3 +103,11 @@ repo = 'dense-analysis/ale'
 # PowerShell
 [[plugins]]
 repo = 'coc-extensions/coc-powershell'
+
+# github copilot
+[[plugins]]
+repo = 'github/copilot.vim'
+
+# fuzzy finder
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
