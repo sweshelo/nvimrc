@@ -21,9 +21,9 @@ set list
 set listchars=tab:^\ ,trail:~,extends:›
 set history=10000
 set expandtab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set showmatch
 set smartindent
 
@@ -61,5 +61,8 @@ augroup MyXML
     autocmd Filetype html inoremap <buffer> </ </<C-x><C-o>
     autocmd Filetype php inoremap <buffer> </ </<C-x><C-o>
 augroup END
+
+" 拡張子が省略されたモジュールでgfを利用可能に
+autocmd FileType javascript,javascriptreact,typescript,typescriptreact set suffixesadd=js,ts,jsx,tsx
 
 filetype indent on
