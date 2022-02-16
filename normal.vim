@@ -37,6 +37,8 @@ set whichwrap=b,s,h,l,<,>,[,],~
 
 set cursorline
 set foldmethod=marker
+set tags=vim.tags
+set wildignore=node_modules/*,vim.tags
 
 set fillchars+=vert:\ 
 
@@ -63,6 +65,6 @@ augroup MyXML
 augroup END
 
 " 拡張子が省略されたモジュールでgfを利用可能に
-autocmd FileType javascript,javascriptreact,typescript,typescriptreact set suffixesadd=js,ts,jsx,tsx
+autocmd FileType javascript,javascriptreact,typescript,typescriptreact set suffixesadd+=js,ts,jsx,tsx
 
 filetype indent on
