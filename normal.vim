@@ -31,7 +31,7 @@ set title
 set number
 set virtualedit=onemore
 
-set clipboard=unnamed
+set clipboard+=unnamed,unnamedplus
 set nrformats=
 set whichwrap=b,s,h,l,<,>,[,],~
 
