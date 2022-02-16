@@ -13,9 +13,6 @@ nmap j gj
 nmap k gk
 nmap <esc><esc> :nohlsearch<cr><cr>
 
-" defx.nvim 開く
-nmap <c-f> :Defx<CR>
-
 " 新しいタブ
 nmap <Space>t  :tabnew<CR>
 
