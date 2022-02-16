@@ -80,7 +80,7 @@ repo = 'plasticboy/vim-markdown'
 repo = 'previm/previm'
 hook_add = '''
     autocmd BufRead,BufNewFile *.md  set filetype=markdown
-    nnoremap <silent> <C-p> :PrevimOpen<CR>
+    nnoremap <silent> <F12> :PrevimOpen<CR>
     let g:vim_markdown_folding_disabled=1
     let g:previm_enable_realtime=1
 '''
