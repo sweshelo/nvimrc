@@ -14,10 +14,10 @@ nmap k gk
 nmap <esc><esc> :nohlsearch<cr><cr>
 
 " defx.nvim 開く
-nmap <Space>ls :Defx<CR>
+nmap <c-f> :Defx<CR>
 
 " 新しいタブ
-nmap <Space>t  :tabnew<CR>:Defx<CR>
+nmap <Space>t  :tabnew<CR>
 
 " ターミナル
 nmap tt :split<CR><c-w>j<c-w>J<c-w>w10<c-w>+<c-w>j:term<CR>
@@ -29,3 +29,6 @@ nmap <c-H> :set filetype=typescript<CR>
 if has('win32') || has('win64')
     imap <Char-0x08> <BS>
 endif
+
+" ジャンプ 別タブで
+nmap gf <c-w>gf
