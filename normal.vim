@@ -4,7 +4,7 @@ set noswapfile
 set noerrorbells
 
 set backspace=indent,eol,start
-set ambiwidth=double
+set ambiwidth=single
 set wildmenu
 set encoding=utf-8
 
