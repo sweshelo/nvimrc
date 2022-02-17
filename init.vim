@@ -18,6 +18,9 @@ execute 'source '.s:dein_dir.'/normal.vim'
 " キーマップ設定
 execute 'source '.s:dein_dir.'/keymap.vim'
 
+" myfunc
+execute 'source '.s:dein_dir.'/myfunc.vim'
+
 " dein.vim 設定 {{{
 if &compatible
     set nocompatible
