@@ -27,5 +27,8 @@ if has('win32') || has('win64')
     imap <Char-0x08> <BS>
 endif
 
+" Defx
+nmap <space>f :Defx<CR>
+
 " ジャンプ 別タブで
 nmap gf <c-w>gf
