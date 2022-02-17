@@ -111,3 +111,7 @@ repo = 'github/copilot.vim'
 # fuzzy finder
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
+
+# color preview
+[[plugins]]
+repo = 'gorodinskiy/vim-coloresque'
