@@ -28,22 +28,7 @@ repo = 'itchyny/lightline.vim'
 
 # カラースキーム
 [[plugins]]
-repo = 'Nequo/vim-allomancer'
-
-[[plugins]]
 repo = 'tomasr/molokai'
-
-# カッコ(とか)を閉じる
-[[plugins]]
-repo = 'cohama/lexima.vim'
-
-# typescript
-[[plugins]]
-repo = 'Quramy/tsuquyomi'
-
-# シンタックスチェッカ
-[[plugins]]
-repo = 'vim-syntastic/syntastic'
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
@@ -60,17 +45,6 @@ repo = 'neoclide/coc-tsserver'
 # shell
 [[plugins]]
 repo = 'Shougo/deol.nvim'
-
-# js
-[[plugins]]
-repo = 'pangloss/vim-javascript'
-
-[[plugins]]
-repo = 'jelera/vim-javascript-syntax'
-
-# Yet Another JavaScript Syntax
-[[plugins]]
-repo = 'othree/yajs.vim'
 
 # vimでマークダウンをプレビューするためのプラグイン
 [[plugins]]
