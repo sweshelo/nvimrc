@@ -1,5 +1,9 @@
-function! S(target)
-  echo a:target
-  execute ':vim '.a:target.' */** | cw'
+function! s:search_word(target)
+  echo 'Searching ' . a:target
+  execute 'tabnew | vim '.a:target.' */** | cw'
 endfunction
-command! -nargs=1 S call S(<f-args>)
+
+command! -nargs=1 S call s:search_word(<f-args>)
+command! W call s:search_word(expand('<cword>'))
+
+nmap <space>w :W<CR>
