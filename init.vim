@@ -9,6 +9,10 @@ if has('win32') || has('win64')
 else
     let s:dein_dir  = expand('~/.config/nvim')
     let s:dein_toml = expand('~/.config/nvim/plug/normal.toml')
+
+    " for neovide
+    set guifont=RictyDiminished\ NF:h12
+
     set guifont=RictyDiminished\ NF\ 12
 endif
 
