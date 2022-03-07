@@ -32,3 +32,7 @@ nmap <space>f :Defx<CR>
 
 " ジャンプ 別タブで
 nmap gf <c-w>gf
+
+" buffer
+nnoremap <c-g>t :bprev<CR>
+nnoremap <c-g>T :bnext<CR>
