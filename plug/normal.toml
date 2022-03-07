@@ -89,3 +89,7 @@ repo = 'ctrlpvim/ctrlp.vim'
 # color preview
 [[plugins]]
 repo = 'gorodinskiy/vim-coloresque'
+
+# emmet
+[[plugins]]
+repo = 'mattn/emmet-vim'
