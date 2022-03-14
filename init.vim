@@ -12,7 +12,6 @@ else
 
     " for neovide
     set guifont=RictyDiminished\ NF:h12
-
     set guifont=RictyDiminished\ NF\ 12
 endif
 
@@ -24,6 +23,9 @@ execute 'source '.s:dein_dir.'/keymap.vim'
 
 " myfunc
 execute 'source '.s:dein_dir.'/myfunc.vim'
+
+" neovide
+execute 'source '.s:dein_dir.'/neovide.vim'
 
 " dein.vim 設定 {{{
 if &compatible
