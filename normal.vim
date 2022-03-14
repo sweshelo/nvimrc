@@ -38,7 +38,7 @@ set whichwrap=b,s,h,l,<,>,[,],~
 set cursorline
 set foldmethod=marker
 set tags=vim.tags
-set wildignore=node_modules/*,vim.tags
+set wildignore=*/.git/*,*/node_modules/*,vim.tags
 
 set fillchars+=vert:\ 
 
