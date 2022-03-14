@@ -342,7 +342,7 @@ call defx#custom#option('_', {
             \ 'resume': 1,
             \ })
 " deol.vim
-nnoremap <silent><C-o> :<c-u>Deol -split=floating<CR>
+nnoremap <silent><C-o> :<c-u>Deol -split=floating -winheight=20 -winwidth=130<CR>
 tnoremap <ESC> <C-\><C-n>
 
 " vim-javascript
