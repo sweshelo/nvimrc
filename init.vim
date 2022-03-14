@@ -66,6 +66,10 @@ set guicursor+=n:ver10,v:ver10,c:ver10
 filetype plugin indent on
 syntax enable
 
+" QuickFix時
+autocmd FileType qf nnoremap <buffer> j j<CR><c-w>j
+autocmd FileType qf nnoremap <buffer> k k<CR><c-w>j
+
 colorscheme molokai
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
