@@ -36,3 +36,9 @@ nmap gf <c-w>gf
 " buffer
 nnoremap <c-g>t :bprev<CR>
 nnoremap <c-g>T :bnext<CR>
+
+" 括弧
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<ESC>i
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
