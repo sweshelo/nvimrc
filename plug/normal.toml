@@ -12,6 +12,16 @@ repo = 'airblade/vim-gitgutter'
 [[plugins]]
 repo = 'Shougo/defx.nvim'
 
+# 補完
+[[plugins]]
+repo = 'Shougo/ddc.vim'
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'vim-denops/denops-helloworld.vim'
+
 # devicon有効に
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
@@ -71,8 +81,9 @@ repo = 'MaxMEllon/vim-jsx-pretty'
 repo = 'leafgarland/typescript-vim'
 
 # ESLint
-[[plugins]]
-repo = 'dense-analysis/ale'
+# TypeScriptReactの設定の模索が必要そう 一旦除外
+#[[plugins]]
+#repo = 'dense-analysis/ale'
 
 # PowerShell
 [[plugins]]
