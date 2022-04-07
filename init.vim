@@ -73,6 +73,10 @@ syntax enable
 autocmd FileType qf nnoremap <buffer> j j<CR><c-w>j
 autocmd FileType qf nnoremap <buffer> k k<CR><c-w>j
 
+" Terminalで行番号非表示
+autocmd TermOpen * setlocal norelativenumber
+autocmd TermOpen * setlocal nonumber
+
 colorscheme molokai
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
