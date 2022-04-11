@@ -3,5 +3,13 @@
     "enable": true,
     "startupMessage": false,
     "executable.command": "~/scoop/apps/python/current/Scripts/jedi-language-server.exe"
+  },
+  "languageserver": {
+    "phpactor": {
+      "command": "phpactor",
+      "args": ["language-server"],
+      "trace.server": "verbose",
+      "filetypes": ["php"]
+    }
   }
 }
