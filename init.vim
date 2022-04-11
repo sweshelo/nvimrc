@@ -10,9 +10,6 @@ if has('win32') || has('win64')
 else
     let s:dein_dir  = expand('~/.config/nvim')
     let s:dein_toml = expand('~/.config/nvim/plug/normal.toml')
-
-    " for neovide
-    set guifont=RictyDiminished\ NF:h12
     set guifont=RictyDiminished\ NF\ 12
 endif
 
@@ -24,9 +21,6 @@ execute 'source '.s:dein_dir.'/keymap.vim'
 
 " myfunc
 execute 'source '.s:dein_dir.'/myfunc.vim'
-
-" neovide
-execute 'source '.s:dein_dir.'/neovide.vim'
 
 " dein.vim 設定 {{{
 if &compatible
@@ -64,7 +58,7 @@ endif
 execute 'source '.s:dein_dir.'/plugin.vim'
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
 
-set guicursor+=n:ver10,v:ver10,c:ver10
+set guicursor+=n:ver30,v:ver30,c:ver30,i:ver30
 
 filetype plugin indent on
 syntax enable
