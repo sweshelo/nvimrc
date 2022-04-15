@@ -11,7 +11,7 @@ imap <c-e> <Esc>$a
 nmap ; :
 nmap j gj
 nmap k gk
-nmap <esc><esc> :nohlsearch<cr><cr>
+nnoremap <esc><esc> :nohlsearch<cr><cr>
 
 " 新しいタブ
 nmap <Space>t  :tabnew<CR>
