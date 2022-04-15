@@ -104,3 +104,6 @@ repo = 'gorodinskiy/vim-coloresque'
 # emmet
 [[plugins]]
 repo = 'mattn/emmet-vim'
+
+[[plugins]]
+repo = 'phpactor/phpactor'
