@@ -15,6 +15,11 @@ function! s:search_file(target)
   "execute 'tabnew | edit '.f_path
 endfunction
 
+function! s:get_filepath()
+  echo expand('%:h')
+endfunction
+
 command! Find call s:search_file(<f-args>)
+command! Path call s:get_filepath()
 
 nmap <space>w :W<CR>
