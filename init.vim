@@ -7,6 +7,8 @@ if has('win32') || has('win64')
     set shellxquote=
     set shellcmdflag=-NoProfile\ -NoLogo\ -NonInteractive\ -C
     set guifont=RictyDiminished\ NF:h12
+    " PowerShell 辞書ロード
+    autocmd FileType powershell,ps1,psm1 set dictionary+=~/AppData/Local/nvim/plug/dict/powershell.dict
 else
     let s:dein_dir  = expand('~/.config/nvim')
     let s:dein_toml = expand('~/.config/nvim/plug/normal.toml')
