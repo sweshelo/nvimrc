@@ -234,7 +234,7 @@ endfunction
 nnoremap <silent> <C-t> :<C-u>call CocActionAsync('jumpDefinition', CocJumpAction())<CR>
 
 " defx.nvim 設定
-autocmd VimEnter,TabNew * Defx -resume -split=vertical -no-focus
+autocmd VimEnter,TabNew * Defx -resume -split=vertical
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
     " Define mappings
