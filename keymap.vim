@@ -7,6 +7,9 @@ imap <c-l> <Right>
 imap <c-a> <Esc>0a
 imap <c-e> <Esc>$a
 
+" sudo write
+cmap w!! w !sudo tee > /dev/null %
+
 " normal
 nmap ; :
 nmap j gj

@@ -13,6 +13,7 @@ else
     let s:dein_dir  = expand('~/.config/nvim')
     let s:dein_toml = expand('~/.config/nvim/plug/normal.toml')
     set guifont=RictyDiminished\ NF\ 12
+    autocmd FileType powershell,ps1,psm1 set dictionary+=~/.config/nvim/plug/dict/powershell.dict
 endif
 
 " 基本設定
