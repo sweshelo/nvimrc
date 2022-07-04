@@ -73,6 +73,7 @@ autocmd FileType qf nnoremap <buffer> k k<CR><c-w>j
 " Terminalで行番号非表示
 autocmd TermOpen * setlocal norelativenumber
 autocmd TermOpen * setlocal nonumber
+autocmd FileType defx setlocal nonumber
 
 colorscheme molokai
 highlight Normal ctermbg=none
