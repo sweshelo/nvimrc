@@ -20,7 +20,7 @@ endif
 execute 'source '.s:dein_dir.'/normal.vim'
 
 " キーマップ設定
-execute 'source '.s:dein_dir.'/keymap.vim'
+execute 'source '.s:dein_dir.'/eucalyn.vim'
 
 " myfunc
 execute 'source '.s:dein_dir.'/myfunc.vim'
