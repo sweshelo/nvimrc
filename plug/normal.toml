@@ -106,4 +106,12 @@ repo = 'gorodinskiy/vim-coloresque'
 repo = 'mattn/emmet-vim'
 
 [[plugins]]
-repo = 'phpactor/phpactor'
+repo  = 'phpactor/phpactor'
+on_ft = ['php']
+build = 'composer install'
+
+[[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+
+[[plugins]]
+repo = 'nvim-telescope/telescope.nvim'

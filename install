@@ -1,2 +1,3 @@
 #!/bin/bash
 ln -s `pwd` $HOME/.config/nvim
+sudo apt install ripgrep fd-find

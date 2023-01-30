@@ -358,3 +358,6 @@ let g:vim_jsx_pretty_colorful_config = 1
 
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" Telescope
+nnoremap <C-g> <cmd>Telescope live_grep<cr>
