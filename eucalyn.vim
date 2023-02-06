@@ -5,7 +5,7 @@ noremap s l
 noremap h g
 
 " insert
-imap tt <Esc>
+imap jj <Esc>
 imap <c-t> <Down>
 imap <c-g> <Left>
 imap <c-k> <Up>
