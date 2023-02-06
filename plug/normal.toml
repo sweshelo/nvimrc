@@ -40,18 +40,6 @@ repo = 'itchyny/lightline.vim'
 [[plugins]]
 repo = 'tomasr/molokai'
 
-[[plugins]]
-repo = 'neoclide/coc.nvim'
-
-[[plugins]]
-repo = 'neoclide/coc-html'
-
-[[plugins]]
-repo = 'neoclide/coc-css'
-
-[[plugins]]
-repo = 'neoclide/coc-tsserver'
-
 # shell
 [[plugins]]
 repo = 'Shougo/deol.nvim'
