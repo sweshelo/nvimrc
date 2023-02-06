@@ -1,3 +1,82 @@
 #!/bin/bash
 ln -s `pwd` $HOME/.config/nvim
-sudo apt install ripgrep fd-find
+
+require_packages=""
+
+#check git
+which git
+if [[ $? != 0 ]] ; then
+  require_packages+="git "
+fi
+
+#check find - for telescope
+if [[ `apt list ripgrep fd-find --installed | wc -l` != 3 ]] ; then
+  require_packages+="ripgrep fd-find "
+fi
+
+# check php8.2 - for phpactor
+if [[ `apt list php8* --installed | wc -l` == 1 ]] ; then
+  echo "PHP 8.2をインストールします"
+  sudo wget -qO /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+  echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
+  sudo apt update
+  require_packages+="php php-dev php-gd php-xml php-soap php-mbstring php-mysql php-curl "
+fi
+
+# check python
+which pip3
+if [[ $? != 0 ]] ; then
+  $require_packages+="python3 python3-dev python3-pip "
+fi
+
+# apt install
+if [ $require_packages ] ; then
+  sudo apt install $require_packages
+fi
+
+# pynvim check - for defx
+pip3 list | grep pynvim
+if [[ $? != 0 ]] ; then
+  pip3 install pynvim
+fi
+
+# composer check - for phpactor
+which composer
+if [[ $? != 0 ]] ; then
+  echo "composerをインストールします"
+  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+  php composer-setup.php
+  php -r "unlink('composer-setup.php');"
+  sudo mv composer.phar /usr/local/bin/composer
+fi
+
+# phpactor install
+which phpactor
+if [[ $? != 0 ]] ; then
+  echo "phpactorをインストールします"
+  git clone git@github.com:phpactor/phpactor
+  cd phpactor
+  phpactor_path=`pwd`
+  composer install
+  cd /usr/local/bin
+  sudo ln -s "${phpactor_path}/bin/phpactor" phpactor
+  phpactor status
+fi
+
+# yarn check - for coc
+which yarn
+if [[ $? != 0 ]] ; then
+  sudo apt install node npm
+  sudo npm -g install yarn
+fi
+
+# coc install
+coc_path=~/.config/nvim/repos/github.com/neoclide/coc.nvim
+ls $coc_path/build/index.js
+if [[ $? != 0 ]] ; then
+  rm -r $coc_path/..
+  git clone git@github.com:neoclide/coc.nvim $coc_path -b release
+  cd $coc_path
+  yarn install
+fi

@@ -4,3 +4,4 @@ cache_vim
 state_vim.vim
 .cache/
 repos/
+phpactor/
